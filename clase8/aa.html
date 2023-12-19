@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="cronometro">0:00</h1>
+    <button onclick="iniciarCronometro()">Iniciar</button>
+    <button onclick="detenerCronometro()">Detener</button>
+    <button onclick="reiniciarCronometro()">Reiniciar</button>
+  
+    <script>
+      let segundos = 0;
+      let minutos = 0;
+      let intervaloId;
+  
+      function actualizarCronometro() {
+        segundos++;
+  
+        if (segundos === 60) {
+          segundos = 0;
+          minutos++;
+        }
+  
+        const cronometroElemento = document.getElementById("cronometro");
+        cronometroElemento.textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`;
+      }
+  
+      function iniciarCronometro() {
+        // Establecer un intervalo para ejecutar la función cada 1000 milisegundos (1 segundo)
+        intervaloId = setInterval(actualizarCronometro, 1000);
+      }
+  
+      function detenerCronometro() {
+        // Detener el intervalo utilizando clearInterval y el identificador
+        clearInterval(intervaloId);
+      }
+  
+      function reiniciarCronometro() {
+        // Reiniciar variables y actualizar el elemento del cronómetro
+        segundos = 0;
+        minutos = 0;
+        const cronometroElemento = document.getElementById("cronometro");
+        cronometroElemento.textContent = "0:00";
+  
+        // Detener el intervalo (por si estaba en ejecución)
+        detenerCronometro();
+      }
+
+  </script>
+
+</body>
+</html>
