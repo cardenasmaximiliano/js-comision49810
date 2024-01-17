@@ -1,0 +1,19 @@
+#carrito{
+    display: flex;
+    justify-content:space-around;
+    padding: 1.25rem;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 20px .9375rem;
+    width: 12.5rem;
+    height: 15.625rem;
+    box-shadow: 2px 2px 5px grey;
+}
+
+#total{
+    display: flex;
+    background-color: lightblue;
+}

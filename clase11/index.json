@@ -1,0 +1,13 @@
+//objetos
+{
+    "nombre":"juan",
+    "edad":25,
+    "ciudad": "mar del plata"
+}
+
+//arrays
+[
+    "manzana",
+    "naranja",
+    "banana"
+]

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrousel-container{
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.carousel{
+    display: flex;
+    overflow: hidden;
+}
+
+.slide{
+    flex: 0 0 100%;
+    /*
+    flex-grow: define capacidad del elemento para crecer al tamaño del contenedor.
+    flex-shrink: define la capacidad del elemento para encogerse . 
+    flex-basis: da el tamaño inicial del elemento. 
+    */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img{ 
+    width: 100%;
+    height: auto;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 1.5625rem;
+    color: white;
+    background-color: rgba(102, 102, 102, 0.192);
+    padding: .625rem;
+    
+}
+
+button:hover{
+    background-color: lightblue;
+}
+
+#anteriorBtn{
+    left: .625rem;
+}
+#siguienteBtn{
+    right: .625rem;
+}
