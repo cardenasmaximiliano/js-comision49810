@@ -1,0 +1,32 @@
+[
+
+ {
+    "id": 1,
+    "nombre":"fideos",
+    "precio":2000,
+    "descripcion":"fideos moñito"
+
+ },
+ {
+    "id": 2,
+    "nombre":"arroz",
+    "precio": 1300,
+    "descripcion":"arroz gallo"
+
+ },
+ {
+    "id": 1,
+    "nombre":"mayonesa",
+    "precio":"1000",
+    "descripcion":"mayonesa natura"
+
+ },
+ {
+    "id": 1,
+    "nombre":"aceite",
+    "precio":2000,
+    "descripcion":"aceite marolio"
+
+ }
+
+]

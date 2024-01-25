@@ -1,0 +1,13 @@
+#characters-container div{
+    
+    width: 18.75rem;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px grey;
+}
+#characters-container img{
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: contain;
+}
+
